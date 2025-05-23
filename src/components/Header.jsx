@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Kytka from '../images/kytka.svg';
 function Header() {
   return (
     <header>
       <div className="container">
-        <img src="/images/kytka.svg" alt="Amber Plasma Logo" className="logo" />
+        <img src={Kytka} alt="Amber Plasma Logo" className="logo" />
       </div>
     </header>
   );

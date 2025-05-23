@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Ruka from '../images/ruka.svg';
 function Footer() {
   return (
     <footer>
-      <img src="/images/ruka.svg" alt="Dekorace dole" className="logo-dole" />
+      <img src={Ruka} alt="Dekorace dole" className="logo-dole" />
     </footer>
   );
 }

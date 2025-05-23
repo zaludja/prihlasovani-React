@@ -37,7 +37,7 @@ header {
 .main-logo {
     display: block;
     margin: 40px auto 20px;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 footer {
@@ -199,4 +199,19 @@ footer img {
     max-width: 90%;
     font-weight: 500;
     text-align: center;
+}
+
+.reset-btn{
+    background-color: var(--_rescrbtn);
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    height: auto;
+    width: auto;
+    border-radius: 35px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px auto 20px auto;
+    display: block;
 }

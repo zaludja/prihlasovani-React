@@ -1,7 +1,7 @@
 import { Form, Input, Button } from 'antd';
-import logoTop from '../../public/images/kytka.svg';
-import logoMain from '../../public/images/moje_amber.svg';
-import logoBottom from '../../public/images/ruka.svg';
+import logoTop from '../images/kytka.svg';
+import logoMain from '../images/moje_amber.svg';
+import logoBottom from '../images/ruka.svg';
 
 function ForgotPasswordPage() {
   const [form] = Form.useForm();
@@ -13,12 +13,6 @@ function ForgotPasswordPage() {
 
   return (
     <div className="page-wrapper">
-      <header className="header">
-        <div className="container">
-          <img src={logoTop} alt="Amber Plasma Logo" className="logo" />
-        </div>
-      </header>
-
       <main>
         <img src={logoMain} alt="Moje Amber Logo" className="main-logo" />
 
@@ -47,9 +41,6 @@ function ForgotPasswordPage() {
         </Form>
       </main>
 
-      <footer>
-        <img src={logoBottom} alt="Dekorace dole" className="logo-dole" />
-      </footer>
     </div>
   );
 }
