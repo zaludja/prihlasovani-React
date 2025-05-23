@@ -79,6 +79,10 @@ footer img {
     font-size: 1em;
     background-color: white;
 }
+.forgot-form{
+    height: 50px;
+    background-color: black;
+}
 
 
 /* Wrapper pro heslo */
@@ -212,6 +216,6 @@ footer img {
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    margin: 10px auto 20px auto;
+    margin: 10px auto 10px auto;
     display: block;
 }
