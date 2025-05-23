@@ -12,7 +12,6 @@ import ForgotPasswordPage from "./components/ForgotPasswordPage";
 function App() {
   return (
   <BrowserRouter basename={""}>
-
       <Header />
       <main>
         <Routes>
@@ -29,7 +28,6 @@ function App() {
         </Routes>
       </main>
       <Footer />
-
   </BrowserRouter>
   );
 }

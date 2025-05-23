@@ -1,7 +1,7 @@
 import { Form, Input, Button } from 'antd';
-import logoTop from '../images/kytka.svg';
+
 import logoMain from '../images/moje_amber.svg';
-import logoBottom from '../images/ruka.svg';
+
 
 function ForgotPasswordPage() {
   const [form] = Form.useForm();
