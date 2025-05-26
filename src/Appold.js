@@ -1,4 +1,4 @@
-import './styles/main.css';
+import './styles/main.sass';
 import React from 'react';
 import Header from './components/Header';
 import MainLogo from './components/MainLogo';

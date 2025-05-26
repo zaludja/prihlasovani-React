@@ -39,7 +39,7 @@ function LoginForm() {
 
         <Divider text="nebo" />
 
-        <Button type="primary" block size="large" className="create-account-btn">
+        <Button type="primary"  className="create-account-btn">
           Vytvořit nový účet Moje Amber
         </Button>
 

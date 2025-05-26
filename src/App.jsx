@@ -1,4 +1,4 @@
-import './styles/main.css';
+import './styles/main.sass';
 import 'antd/dist/reset.css';
 import React from 'react';
 import Header from './components/Header';

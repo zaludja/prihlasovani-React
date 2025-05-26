@@ -1,0 +1,23 @@
+.divider
+  text-align: center
+  margin: 10px 0
+  position: relative
+  color: var(--_txt)
+  font-weight: bold
+
+
+  &::before, &::after
+    content: ""
+    position: absolute
+    height: 1px
+    background-color: var(--_dev)
+    top: 50%
+    width: 40%
+
+  
+  &::before
+    left: 0
+
+
+  &::after
+    right: 0

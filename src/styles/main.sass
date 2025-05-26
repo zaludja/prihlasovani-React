@@ -1,0 +1,93 @@
+@import "reset"
+@import "buttons"
+@import "forms"
+@import "password"
+@import "divider"
+
+
+:root
+  --_bg: #CFDDE5
+  --_txt: #1D4A69
+  --_dev: #aaa
+  --_lgnbtn: #AA274A
+  --_rescrbtn: #1D4A69
+  --_bgerror: #ffe8e8
+
+
+* 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: "Open Sans", sans-serif
+
+
+body 
+  background-color: var(--_bg)
+  display: flex
+  flex-direction: column
+  font-size: 16px
+  min-height: 100vh
+
+
+header 
+  background-color: white
+  padding: 20px
+  text-align: center
+  height: 75px
+
+
+.logo 
+  height: 35px
+  display: inline-block
+
+
+.main-logo 
+  display: block
+  margin: 40px auto 20px
+  max-width: 400px
+
+
+footer 
+  margin-top: auto
+  text-align: left
+
+
+footer img 
+  width: 150px
+  padding: 0
+  margin-left: 20%
+
+.eye-icon 
+  position: absolute
+  right: 10px
+  top: 50%
+  transform: translateY(-50%)
+  font-size: 1.2em
+  cursor: pointer
+  color: #555
+
+.help-text 
+  text-align: center
+  font-size: 0.9em
+  color: var(--_txt)
+  margin-top: 20px
+
+
+.help-text a 
+  color: var(--_txt)
+  text-decoration: underline
+  font-weight: bold
+
+.error-msg 
+  display: block
+  background-color: var(--_bgerror)
+  border: 1px solid black
+  border-radius: 30px
+  padding: 12px 16px
+  font-size: 1em
+  margin: 0 auto 15px auto
+  max-width: 90%
+  font-weight: 500
+  text-align: center
+
+
