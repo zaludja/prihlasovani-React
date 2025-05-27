@@ -45,7 +45,7 @@ function LoginForm() {
 
         <p className="help-text">
           Jste náš stávající dárce a nemůžete se přihlásit?{' '}
-          <a href="#">Klikněte zde</a> a nastavte si heslo.
+          Klikněte zde a nastavte si heslo.
         </p>
       </form>
     </>
