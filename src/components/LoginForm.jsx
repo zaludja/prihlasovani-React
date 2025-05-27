@@ -8,7 +8,7 @@ import 'antd/dist/reset.css';
 import { Link } from 'react-router-dom';
 
 function LoginForm() {
-  const [formError, setFormError] = useState('');
+  const [formError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
