@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: set variable
+        run: set PUBLIC_URL=.&& react-scripts start
+
       - name: Build the React app
         run: npm run ci-build
 
