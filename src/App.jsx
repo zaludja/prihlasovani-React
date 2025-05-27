@@ -11,7 +11,7 @@ import ForgotPasswordPage from "./components/ForgotPasswordPage";
 
 function App() {
   return (
-  <BrowserRouter basename={""}>
+  <BrowserRouter basename={"/zaludja/"}>
       <Header />
       <main>
         <Routes>
