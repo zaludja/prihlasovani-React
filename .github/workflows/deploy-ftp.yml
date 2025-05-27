@@ -21,12 +21,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build and start the app
-        run: export PUBLIC_URL=.
-          npm start
+
 
       - name: Build the React app
-        run: npm run ci-build
+        run: | 
+          PUBLIC_URL=. 
+          npm run ci-build
 
       - name: Upload build folder to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.1
