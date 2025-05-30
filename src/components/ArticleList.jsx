@@ -18,26 +18,26 @@ function ArticleList() {
   }, [page]);
 
   return (
-    <div>
+    <div className="article-list-wrapper">
       {articles.map((post) => (
-        <div key={post.id} style={{ marginBottom: "2rem", borderBottom: "1px solid #ccc", paddingBottom: "1rem" }}>
-          <h2>
-            <a href={post.link} target="_blank" rel="noopener noreferrer">
+        <div key={post.id} className="article-card">
+          <h2 className="article-title">
+            <a href={post.link} target="_blank" rel="noopener noreferrer" className="article-link">
               {post.title.rendered}
             </a>
           </h2>
-          <p>
-            <strong>Autor:</strong> {post._embedded.author[0].name} <br />
-            <strong>Datum:</strong> {new Date(post.date).toLocaleDateString()}
+          <p className="article-meta">
+            <strong className="article-author">Autor:</strong> {post._embedded.author[0].name} <br />
+            <strong className="article-date">Datum:</strong> {new Date(post.date).toLocaleDateString()}
           </p>
         </div>
       ))}
 
-      <div style={{ marginTop: "2rem" }}>
+      <div className="pagination">
         <button onClick={() => setPage((p) => Math.max(p - 1, 1))} disabled={page === 1}>
           Předchozí
         </button>
-        <span style={{ margin: "0 1rem" }}>Stránka {page} z {totalPages}</span>
+        <span className="pagination-info">Stránka {page} z {totalPages}</span>
         <button onClick={() => setPage((p) => Math.min(p + 1, totalPages))} disabled={page === totalPages}>
           Další
         </button>
