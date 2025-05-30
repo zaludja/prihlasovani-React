@@ -41,14 +41,33 @@ function ArticleList() {
       ))}
 
       <div className="pagination">
-        <button onClick={() => setPage((p) => Math.max(p - 1, 1))} disabled={page === 1} className="page-button">
+        <button
+          onClick={() => {
+            setPage((p) => Math.max(p - 1, 1));
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          disabled={page === 1}
+          className="page-button"
+        >
           Předchozí
         </button>
-        <span className="pagination-info">Stránka {page} z {totalPages}</span>
-        <button onClick={() => setPage((p) => Math.min(p + 1, totalPages))} disabled={page === totalPages} className="page-button">
+
+        <span className="pagination-info">
+    Stránka {page} z {totalPages}
+  </span>
+
+        <button
+          onClick={() => {
+            setPage((p) => Math.min(p + 1, totalPages));
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          disabled={page === totalPages}
+          className="page-button"
+        >
           Další
         </button>
       </div>
+
     </div>
   );
 }
