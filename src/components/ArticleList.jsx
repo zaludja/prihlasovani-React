@@ -21,6 +21,13 @@ function ArticleList() {
     <div className="article-list-wrapper">
       {articles.map((post) => (
         <div key={post.id} className="article-card">
+          {post._embedded["wp:featuredmedia"] && (
+            <img
+              src={post._embedded["wp:featuredmedia"][0].source_url}
+              alt={post.title.rendered}
+              className="article-image"
+            />
+          )}
           <h2 className="article-title">
             <a href={post.link} target="_blank" rel="noopener noreferrer" className="article-link">
               {post.title.rendered}
