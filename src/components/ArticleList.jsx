@@ -34,11 +34,11 @@ function ArticleList() {
       ))}
 
       <div className="pagination">
-        <button onClick={() => setPage((p) => Math.max(p - 1, 1))} disabled={page === 1}>
+        <button onClick={() => setPage((p) => Math.max(p - 1, 1))} disabled={page === 1} className="page-button">
           Předchozí
         </button>
         <span className="pagination-info">Stránka {page} z {totalPages}</span>
-        <button onClick={() => setPage((p) => Math.min(p + 1, totalPages))} disabled={page === totalPages}>
+        <button onClick={() => setPage((p) => Math.min(p + 1, totalPages))} disabled={page === totalPages} className="page-button">
           Další
         </button>
       </div>
