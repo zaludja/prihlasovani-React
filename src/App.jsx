@@ -7,6 +7,7 @@ import LoginForm from './components/LoginForm';
 import Footer from './components/Footer';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import ForgotPasswordPage from "./components/ForgotPasswordPage";
+import ArticleList from "./components/ArticleList";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             }
           />
           <Route path="/zapomenute-heslo" element={<ForgotPasswordPage />} />
+          <Route path="/clanky" element={<ArticleList />} />
         </Routes>
       </main>
       <Footer />

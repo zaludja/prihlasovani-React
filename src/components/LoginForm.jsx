@@ -33,11 +33,11 @@ function LoginForm() {
         <Link to="/zapomenute-heslo" className="forgot-password">
           🔒 Zapomenuté heslo
         </Link>
-
-        <Button type="primary"  className="login-btn">
-           Přihlásit se
-        </Button>
-
+        <Link to="clanky">
+          <Button type="primary"  className="login-btn">
+            Přihlásit se
+          </Button>
+        </Link>
         <Divider text="nebo" />
 
         <Button type="primary"  className="create-account-btn">
