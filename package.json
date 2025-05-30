@@ -18,7 +18,7 @@
   },
   "scripts": {
     "homepage": "https://zaludja.github.io/prihlasovani-React",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "start": "react-scripts start",
     "build": "set PUBLIC_URL=.&& react-scripts build",
     "ci-build": "PUBLIC_URL=. react-scripts build",
 
