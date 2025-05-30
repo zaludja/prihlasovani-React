@@ -32,6 +32,7 @@ function LoginForm() {
 
         <Link to="/zapomenute-heslo" className="forgot-password">
           🔒 Zapomenuté heslo
+
         </Link>
 
         <Link to="/clanky">
