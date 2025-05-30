@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "homepage": "https://zaludja.github.io/prihlasovani-React",
+    "homepage": "/studenti/zaludja",
     "start": "react-scripts start",
     "build": "set PUBLIC_URL=.&& react-scripts build",
     "ci-build": "PUBLIC_URL=. react-scripts build",
