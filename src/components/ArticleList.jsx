@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_URL = "https://www.crmcarecloud.com/wp-json/wp/v2/";
+const API_URL = "https://www.crmcarecloud.com/wp-json/wp/v2/posts";
 
 function ArticleList() {
   const [articles, setArticles] = useState([]);
