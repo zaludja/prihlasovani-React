@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import ForgotPasswordPage from "./components/ForgotPasswordPage";
 import ArticleList from "./components/ArticleList";
+import CreateList from "./components/CreateList";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           />
           <Route path="/zapomenute-heslo" element={<ForgotPasswordPage />} />
           <Route path="/clanky" element={<ArticleList />} />
+          <Route path="/create" element={<CreateList />} />
         </Routes>
       </main>
       <Footer />

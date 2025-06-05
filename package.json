@@ -11,6 +11,7 @@
     "antd": "^5.25.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-phone-number-input": "^3.4.12",
     "react-router-dom": "^7.6.0",
     "react-scripts": "5.0.1",
     "sass": "^1.89.0",
@@ -21,7 +22,6 @@
     "start": "react-scripts start",
     "build": "set PUBLIC_URL=.&& react-scripts build",
     "ci-build": "PUBLIC_URL=. react-scripts build",
-
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,6 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-
   }
 }

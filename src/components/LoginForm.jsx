@@ -43,9 +43,11 @@ function LoginForm() {
 
         <Divider text="nebo" />
 
-        <Button type="primary"  className="create-account-btn">
-          Vytvořit nový účet Moje Amber
-        </Button>
+        <Link to="/create">
+          <Button type="primary"  className="create-account-btn">
+            Vytvořit nový účet Moje Amber
+          </Button>
+        </Link>
 
         <p className="help-text">
           Jste náš stávající dárce a nemůžete se přihlásit?{' '}
